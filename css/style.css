@@ -80,7 +80,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.img-adv{
+  height: 100px;
+    border-radius: 47px;
+}
 .button {
   cursor: pointer;
   display: block;
@@ -96,15 +99,20 @@ img {
   color: #fefcfa;
   background-color: #2f5da1;
   border: 1.5px solid #ffffff;
+ 
 }
-
+.button--dark{
+  margin: auto;
+}
 .button--blue {
   background-color: #7b97f6;
   margin-bottom: 50px;
+  margin: auto;
 }
 
 .button--pink {
   background-color: #5879e8;
+  margin: auto;
 }
 
 .button:hover,
@@ -277,6 +285,7 @@ img {
   background-image: url("../img/background-main-desktop.png");
   background-size: cover;
   min-height: 512px;
+  
 }
 
 .main-block-wrapper svg {
@@ -359,7 +368,7 @@ img {
   margin-right: auto;
   width: 71.01%;
   min-width: 970px;
-
+  margin-bottom: 99px;
   max-width: 1440px;
 }
 
@@ -443,7 +452,7 @@ img {
   background-image: url("../img/background-our-groups-desktop.svg");
   background-size: 100% 100%;
   min-height: 803px;
-  padding-bottom: 70px;
+  
 }
 
 .our-groups__wrapper {
@@ -451,8 +460,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  margin : auto;
+  margin t: auto;
   padding-top: 170px;
   padding-left: 3px;
   width: 71.44%;
@@ -516,6 +525,7 @@ img {
   margin-bottom: 30px;
   border-radius: 12px;
   border: 3px solid #7b97f6;
+  padding-bottom: 21px;
 }
 
 .our-groups__item:nth-of-type(3n) {
@@ -536,7 +546,7 @@ img {
 
 .our-groups__article-header {
   margin-top: 41px;
-  margin-bottom: 28px;
+  margin-bottom: 44px;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -560,13 +570,71 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
+  height: 167px;
 }
-
+.our-groups__price-group {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+   
+}
 .our-groups__price span {
   font-size: 16px;
   line-height: 22px;
 }
+.works {
+  margin: -21px auto;
+  padding: 20px;
+  width: 146px;
+  background-color: white;
+   
+}
+.caption-link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+}
+.caption-link img {
+  display: block;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+.caption-link:hover img {
+  transform: translateX(100%);
+}
 
+.caption-link::before,
+.caption-link::after {
+  position: absolute;
+  z-index: -1;
+  box-sizing: border-box;
+  width: 100%;
+   
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  left: 0;
+  
+}
+
+.caption-link::before {
+  padding: 30px;
+  height: 30%;
+   
+  content: attr(data-title);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.caption-link::after {
+  top: 15%;
+  font-weight: 700;
+  height: 70%;
+  color: #122659;
+  content: attr(data-description);
+}
 .teachers {
   position: relative;
   display: flex;
